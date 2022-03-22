@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-color: #023047;
+}
+
+.body {
+    display: grid;
+    justify-content: center;
+
+    align-items: center;
+    height: 100vh;
+    background-color: #eee;
+    padding: 50vh;
+}
+
+.title {
+
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #8ECAE6;
+    font-size: 70px;
+}
+
+.board {
+    display: grid;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    grid-template-columns: repeat(3, 240px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 1rem;
+}
+
+.cell {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: steelblue;
+    color: black;
+    cursor: pointer;
+    font-size: 70px;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+.endGame{
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    color: #8ECAE6;
+    font-size: 100px;
+}
+
+.cell.X{
+
+    background-color: #FFB703;
+}
+
+.cell.O{
+
+    background-color: #FB8500;
+}
